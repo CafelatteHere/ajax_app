@@ -19,7 +19,7 @@ class PostsController < ApplicationController
       post.update(checked:true)
     end
 
-    item = Post.find(params[:id])
+    item = Post.find(params[:id]) #endpoint localhost:3000/posts/1/checked
     render json: { post: item }
   end
 end
